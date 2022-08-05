@@ -1,0 +1,67 @@
+html, body {
+    min-height: 100%
+}
+header, footer, section {
+    width: 100vw
+}
+
+header, footer {
+    height: 100px;
+    position: relative;
+}
+
+header {
+    border-bottom: 1px solid black
+}
+
+footer {
+    border-top: 1px solid black
+}
+
+section {
+    height: calc(100% - 200px)
+}
+
+.top-fields-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 10px;  
+    /* align-items: center; */
+}
+
+.top-field {
+    display: inline-block;
+    padding: 8px 15px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.controls {
+    margin-left: 10px;
+    cursor: pointer;
+    height: 40px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.control-inner {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    color: blue;
+    font-weight: 900;
+    text-align: center;
+}
+
+.control-inner:first-child {
+    border-right: 1px solid black;
+}
